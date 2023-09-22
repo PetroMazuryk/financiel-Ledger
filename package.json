@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://PetroMazuryk.github.io/financiel-Ledger",
+  "homepage": "https://PetroMazuryk.github.io/financial-Ledger",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /financiel-Ledger/"
+    "build": "parcel build src/*.html --public-url /financial-Ledger/"
   },
   "repository": {
     "type": "git",
