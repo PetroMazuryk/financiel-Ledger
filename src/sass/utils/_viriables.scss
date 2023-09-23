@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-logo-color: tomato;
+  --secondary-logo-color: green;
+}

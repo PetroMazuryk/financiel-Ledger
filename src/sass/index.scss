@@ -1,2 +1,8 @@
-@import './common';
+@import './base/reset';
+@import './base/common';
+
 @import './example';
+
+@import './layout/header';
+
+@import './utils/viriables';
