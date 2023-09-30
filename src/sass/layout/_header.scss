@@ -1,8 +1,12 @@
 .page-header {
-  padding: 20px 10px;
-  display: flex;
+  position: absolute;
+  // top: 27px;
+  left: 0;
+  width: 100%;
+  // padding: 20px 10px;
+  // display: flex;
 
-  justify-content: space-between;
+  // justify-content: space-between;
 
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -17,25 +21,11 @@
   background-repeat: no-repeat;
   background-color: grey;
 }
-// .logo {
-//   display: flex;
-// }
-// .logo__text--accent {
-//   color: var(--primary-logo-color);
-// }
-// .logo__icon {
-//   fill: rgb(16, 126, 216);
-// }
 
 .nav-list {
-  color: white;
   display: flex;
   gap: 18px;
 }
-// .nav-list__link {
-//   color: white;
-//   padding: 10px;
-// }
-// .logo {
-//   color: white;
-// }
+.nav-list__link {
+  color: white;
+}
