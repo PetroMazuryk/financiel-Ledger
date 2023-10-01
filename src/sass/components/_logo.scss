@@ -5,7 +5,11 @@
 }
 
 .logo__text--accent {
-  color: var(--primary-logo-color);
+  font-size: 32px;
+
+  // color: aquamarine;
+  // color: $primary-logo-color;
+  color: getColor('primary-logo-color');
 }
 
 .logo__icon {
@@ -20,14 +24,14 @@
 //   }
 // }
 
-@media (min-width: 768px) {
-  .logo {
-    font-size: 35px;
-    margin-bottom: 0;
-    margin-left: 40px;
-  }
+// @media (min-width: 768px) {
+//   .logo {
+//     font-size: 28px;
+//     margin-bottom: 0;
+//     margin-left: 40px;
+//   }
 
-  .logo__icon {
-    margin-right: 10px;
-  }
-}
+//   .logo__icon {
+//     margin-right: 4px;
+//   }
+// }

@@ -1,13 +1,11 @@
 .page-header {
   position: absolute;
+  width: 100%;
   // top: 27px;
   left: 0;
-  width: 100%;
   // padding: 20px 10px;
   // display: flex;
-
-  // justify-content: space-between;
-
+  background-color: grey;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -19,7 +17,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: grey;
 }
 
 .nav-list {
@@ -27,5 +24,6 @@
   gap: 18px;
 }
 .nav-list__link {
+  font-size: 18px;
   color: white;
 }

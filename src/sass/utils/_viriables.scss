@@ -1,13 +1,13 @@
-html {
-  box-sizing: border-box;
+$font-family: 'Open Sans';
+
+$colors: (
+  'primary-logo-color': #79efc8,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+$primary-logo-color: rgb(121, 239, 200);
 
-:root {
-  --primary-logo-color: tomato;
-}
+$btn-border-radius: 5px;
