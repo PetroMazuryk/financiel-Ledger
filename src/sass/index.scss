@@ -1,8 +1,8 @@
-@import './base/common';
-@import './base/reset';
-
 @import './utils/viriables';
 @import './utils/mixins';
+
+@import './base/reset';
+@import './base/normalize';
 
 @import './components/container';
 @import './components/logo';

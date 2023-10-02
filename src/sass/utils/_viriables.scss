@@ -1,13 +1,14 @@
 $font-family: 'Open Sans';
 
 $colors: (
-  'primary-logo-color': #79efc8,
+  'main': #ffffff,
+  'primary-logo': #79efc8,
+  'icon-logo': #2f96eb,
+  'color': #343434,
 );
 
 @function getColor($key) {
   @return map-get($colors, $key);
 }
-
-$primary-logo-color: rgb(121, 239, 200);
 
 $btn-border-radius: 5px;
