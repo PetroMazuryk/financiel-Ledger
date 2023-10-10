@@ -1,6 +1,7 @@
 .logo {
   font-size: 32px;
   line-height: 1.31;
+
   color: getColor('main');
 
   &:hover {
@@ -35,21 +36,32 @@
   margin-right: 5px;
 }
 
-// @media (min-width: 320px) {
-//   .logo {
-//     @mixin flexCentr();
-//     margin-bottom: 10px;
-//   }
-// }
+.heart-beat {
+  animation: heart-beat 3s ease infinite;
+}
 
-// @media (min-width: 768px) {
-//   .logo {
-//     font-size: 28px;
-//     margin-bottom: 0;
-//     margin-left: 40px;
-//   }
+@keyframes heart-beat {
+  0% {
+    transform: scale(0.75);
+  }
 
-//   .logo__icon {
-//     margin-right: 4px;
-//   }
-// }
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(0.75);
+  }
+}
