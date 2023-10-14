@@ -1,13 +1,11 @@
 .footer {
-  display: grid;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   margin: 0 auto;
-
-  place-items: center;
-
-  background: #454545;
+  background: getColor('bg-color');
   border-radius: 0px;
   padding: 20px 0;
   @media screen and (min-width: 320px) {
@@ -21,6 +19,28 @@
     width: 1360px;
   }
 
+  .circle__text {
+    font-size: 28px;
+    fill: white;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    word-spacing: 20px;
+    animation: motion normal infinite 20s linear;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes motion {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .circle:hover .circle__text {
+    animation-play-state: paused;
+  }
+
+  .footer__social {
+    margin-left: 80px;
+  }
   .footer__btn {
     display: inline-block;
     width: 60px;
@@ -116,7 +136,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 500;
-  line-height: 60px;
+  line-height: 20px;
   margin-top: 10px;
-  color: white;
+  color: getColor('main');
 }
