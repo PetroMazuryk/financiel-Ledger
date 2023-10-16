@@ -1,9 +1,62 @@
 .promo-box {
-  // position: relative;
-  background-color: grey;
-  //   background-image: url("../images/promo-desktop-x1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 12px;
+  border-bottom: 1px solid getColor('mob-border');
+  background-color: getColor('bg-color');
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/city/mob-480.jpg);
+
+  height: 533px;
+
   background-size: cover;
-  //   padding: 148px 40px 95px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/city/mob@2-960.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid getColor('tab-border');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/city/tab.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/city/tab@2.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    border-bottom: 1px solid getColor('decktop-border');
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/city/desktop-1360.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/city/desktop@2-2720.jpg);
+    }
+  }
 }

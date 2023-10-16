@@ -1,5 +1,14 @@
-.header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav-list {
+  @include centeredFlex();
+  gap: 18px;
+}
+.nav-list__link {
+  display: block;
+  padding: 8px;
+  font-size: 18px;
+  color: getColor('main');
+
+  &:hover {
+    color: getColor('nav-hover');
+  }
 }

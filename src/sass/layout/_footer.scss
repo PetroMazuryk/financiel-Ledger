@@ -6,11 +6,19 @@
   background: getColor('bg-color');
   border-radius: 0px;
   padding: 20px 0;
-  @media screen and (min-width: 320px) {
-    width: 320px;
+  @media screen and (max-width: 767px) {
+    .footer__title {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+    .footer__social {
+      margin-left: 80px;
+    }
   }
 
   @media screen and (min-width: 1360px) {
@@ -36,9 +44,6 @@
     animation-play-state: paused;
   }
 
-  .footer__social {
-    margin-left: 80px;
-  }
   .footer__btn {
     display: inline-block;
     width: 60px;

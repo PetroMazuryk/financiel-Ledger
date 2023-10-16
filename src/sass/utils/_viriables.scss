@@ -1,14 +1,17 @@
 $font-family: 'Open Sans';
+$btn-border-radius: 5px;
 
 $colors: (
   'main': #ffffff,
   'primary-logo': #79efc8,
   'icon-logo': #2f96eb,
   'bg-color': #343434,
+  'mob-border': #87a987,
+  'tab-border': #7b7be0,
+  'decktop-border': #8555b3,
+  'nav-hover': #d400ff,
 );
 
 @function getColor($key) {
   @return map-get($colors, $key);
 }
-
-$btn-border-radius: 5px;
