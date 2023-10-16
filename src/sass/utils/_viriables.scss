@@ -1,5 +1,6 @@
 $font-family: 'Open Sans';
 $btn-border-radius: 5px;
+$transition-basic: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $colors: (
   'main': #ffffff,
@@ -10,6 +11,8 @@ $colors: (
   'tab-border': #7b7be0,
   'decktop-border': #8555b3,
   'nav-hover': #d400ff,
+  'bg-basic': #43934c,
+  'bg-btn-hover': #006400,
 );
 
 @function getColor($key) {

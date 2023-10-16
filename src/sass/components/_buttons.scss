@@ -1,0 +1,28 @@
+.btn__promo {
+  @include centeredFlex();
+  width: 160px;
+  height: 44px;
+  background-color: getColor('bg-basic');
+  color: getColor('main');
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: $btn-border-radius;
+  margin: 0 auto;
+
+  transition: background-color $transition-basic, outline $transition-basic;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('bg-btn-hover');
+    outline: 2px solid getColor('main');
+  }
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.btn__icon {
+  fill: getColor('main');
+  margin-right: 5px;
+}
