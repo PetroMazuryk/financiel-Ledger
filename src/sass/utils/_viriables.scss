@@ -13,6 +13,8 @@ $colors: (
   'nav-hover': #d400ff,
   'bg-basic': #43934c,
   'bg-btn-hover': #006400,
+  'bg-about': #eee7e7,
+  'bg-about-icon': #129a12,
 );
 
 @function getColor($key) {
