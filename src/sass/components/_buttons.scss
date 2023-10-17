@@ -9,12 +9,25 @@
   border-radius: $btn-border-radius;
   margin: 0 auto;
 
+  &::before {
+    content: '';
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background-image: url(../images/notebook.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   transition: background-color $transition-basic, outline $transition-basic;
 
   &:hover,
   &:focus {
     background-color: getColor('bg-btn-hover');
     outline: 2px solid getColor('main');
+    text-decoration: underline;
   }
 
   @media (min-width: 768px) {
@@ -25,4 +38,16 @@
 .btn__icon {
   fill: getColor('main');
   margin-right: 5px;
+}
+
+.btn__promo::before {
+  content: '';
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background-image: url(../images/notebook.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
