@@ -16,6 +16,8 @@ $colors: (
   'bg-btn-hover': #006400,
   'bg-about': #eee7e7,
   'bg-about-icon': #129a12,
+  'bg-work': #f2f0f0,
+  'text': #333333,
 );
 
 @function getColor($key) {

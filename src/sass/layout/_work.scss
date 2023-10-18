@@ -1,21 +1,20 @@
 .work {
-  padding: 50px 28px;
-  background-color: #fff;
+  padding: 40px 26px;
+  background-color: getColor('bg-work');
 }
 
 .work__box {
   text-align: center;
+  color: getColor('text');
 }
 
 .work__subtitle {
-  margin-bottom: 15px;
-  color: #333333;
+  margin-bottom: 14px;
 }
 .work__title {
-  margin-bottom: 35px;
-  color: #333333;
+  margin-bottom: 18px;
 }
 .work__text {
+  font-size: 18px;
   margin-bottom: 38px;
-  color: #333333;
 }
