@@ -25,6 +25,15 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+
+  opacity: 0;
+  transition: linear 1000ms;
+  transform: translateX(-100%);
+}
+
+img.appear {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 body {
