@@ -1,86 +1,81 @@
-.servicess {
+.services {
   position: relative;
   z-index: 5;
 }
 
-.servicess__bespoke-solutions {
-  padding: 30px;
+.services__bespoke-solutions {
+  padding: 40px;
+  text-align: center;
   background-color: #28a745;
 }
 
-.servicess__title {
+.services__title {
   font-size: 16px;
   line-height: 1.62;
   color: getColor('main');
   margin-bottom: 5px;
 }
 
-.servicess__bespoke {
+.services__bespoke {
   font-weight: 300;
   font-size: 38px;
   line-height: 1.26;
   color: getColor('main');
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
-.servicess__description {
+.services__description {
   font-size: 16px;
   line-height: 1.62;
   color: getColor('main');
-  margin-bottom: 14px;
-  text-align: left;
-}
-
-.servicess__comands {
-  @include centeredFlex();
+  margin-bottom: 26px;
 }
 
 @media (min-width: 768px) {
-  .servicess {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .bespoke {
     display: flex;
   }
 
-  .servicess__comands {
+  .services__bespoke-solutions {
+    padding: 14px 10px;
     width: 50%;
   }
 
-  .servicess__bespoke-solutions {
-    width: 50%;
-  }
-
-  .servicess__title {
+  .services__title {
     font-size: 20px;
   }
 
-  .servicess__description {
+  .services__bespoke {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .services__description {
     font-size: 18px;
-    max-width: 315px;
+    margin-bottom: 6px;
   }
 }
 
 @media (min-width: 1360px) {
-  .servicess {
-    max-width: 1360px;
-    margin-left: auto;
-    margin-right: auto;
+  .services__bespoke-solutions {
+    padding: 50px 20px;
   }
 
-  .servicess__bespoke-solutions {
-    padding-top: 84px;
-    padding-bottom: 84px;
+  .services__title {
+    font-size: 24px;
   }
 
-  .servicess__comands {
-    height: 100%;
+  .services__bespoke {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 16px;
   }
 
-  .servicess__description {
-    max-width: 606px;
+  .services__description {
+    font-size: 18px;
+    margin-bottom: 24px;
   }
 }
