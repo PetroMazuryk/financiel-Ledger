@@ -46,16 +46,14 @@
   width: 158px;
   height: 47px;
   background-color: transparent;
-  outline: 1px solid #fff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  outline: 1px solid getColor('main');
+  border-radius: $btn-border-radius;
+  color: getColor('main');
+  transition: background-color $transition-basic;
 
   &:hover,
   &:focus {
-    background-color: darkgreen;
+    background-color: getColor('bg-btn-hover');
   }
 
   @media (min-width: 768px) {
@@ -70,18 +68,15 @@
   width: 100px;
   height: 30px;
   background-color: transparent;
-  outline: 1px solid #fff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
+  outline: 1px solid getColor('main');
+  border-radius: $btn-border-radius;
+  color: getColor('main');
+  transition: background-color $transition-basic;
+  margin: 0 auto;
 
   &:hover,
   &:focus {
-    background-color: darkgreen;
-    outline: 2px solid #fff;
+    background-color: getColor('bg-btn-hover');
+    outline: 2px solid getColor('main');
   }
 }
