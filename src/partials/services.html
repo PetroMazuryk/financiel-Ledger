@@ -8,6 +8,7 @@
             ./images/services/meeting-desk@2-1360.jpg 2x
           "
           media="(min-width: 1360px)"
+          loading="lazy"
         />
         <source
           srcset="
@@ -15,6 +16,7 @@
             ./images/services/meeting-tab@2-768.jpg 2x
           "
           media="(min-width:768px)"
+          loading="lazy"
         />
         <source
           srcset="
@@ -22,9 +24,11 @@
             ./images/services/meeting-mob@2-960.jpg 2x
           "
           media="(max-width:767px)"
+          loading="lazy"
         />
         <img
-          src="./images/services/meeting-desk-680.jpg"
+          class="lazyload"
+          data-src="./images/services/meeting-desk-680.jpg"
           alt="Great team in the office"
           loading="lazy"
         />
