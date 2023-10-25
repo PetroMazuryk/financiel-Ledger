@@ -40,7 +40,8 @@
   margin-right: 5px;
 }
 
-.btn__services {
+.btn__services,
+.btn__blog {
   @include centeredFlex();
   margin: 0 auto;
   width: 158px;
@@ -63,7 +64,8 @@
   }
 }
 
-.button__close {
+.button__close,
+.blog__close {
   @include centeredFlex();
   width: 100px;
   height: 30px;

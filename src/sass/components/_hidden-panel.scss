@@ -14,13 +14,37 @@
   z-index: -10;
 }
 
-.panel-info {
+.panel__info {
   font-size: 20px;
-  color: #fff;
+  color: getColor('main');
   margin-bottom: 15px;
 }
 
 .panel--show {
   transform: translateY(100%);
   opacity: 1;
+}
+
+//  blog section
+.blog__panel {
+  position: absolute;
+  margin: 0;
+  transform: translateY(0);
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  transition: $transition-basic;
+  background-color: getColor('bg-blog');
+  z-index: -10;
+  pointer-events: none;
+}
+
+.blog__panel--show {
+  transform: translateY(100%);
+  opacity: 1;
+  pointer-events: fill;
 }
