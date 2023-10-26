@@ -26,6 +26,9 @@
   margin-bottom: 14px;
 }
 
+.swiper-slide {
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
   .blog {
     display: flex;
@@ -33,5 +36,18 @@
   }
   .blog__post {
     width: 50%;
+    padding: 40px;
+  }
+  .swiper-slide {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1360px) {
+  .blog__post {
+    padding: 80px 40px;
+  }
+  .swiper-slide {
+    margin-bottom: 30px;
   }
 }
