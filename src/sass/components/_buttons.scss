@@ -40,8 +40,7 @@
   margin-right: 5px;
 }
 
-.btn__services,
-.btn__blog {
+.btn__services {
   @include centeredFlex();
   margin: 0 auto;
   width: 158px;
@@ -55,6 +54,7 @@
   &:hover,
   &:focus {
     background-color: getColor('bg-btn-hover');
+    outline: 2px solid getColor('main');
   }
 
   @media (min-width: 768px) {
@@ -64,8 +64,7 @@
   }
 }
 
-.button__close,
-.blog__close {
+.button__close {
   @include centeredFlex();
   width: 100px;
   height: 30px;
@@ -79,6 +78,48 @@
   &:hover,
   &:focus {
     background-color: getColor('bg-btn-hover');
+    outline: 2px solid getColor('main');
+  }
+}
+
+.btn__blog {
+  @include centeredFlex();
+  margin: 0 auto;
+  width: 158px;
+  height: 47px;
+  background-color: transparent;
+  outline: 1px solid getColor('main');
+  border-radius: $btn-border-radius;
+  color: getColor('main');
+  transition: background-color $transition-basic;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('bg-btn-blog');
+    outline: 2px solid getColor('main');
+  }
+
+  @media (min-width: 768px) {
+    width: 167px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+.blog__close {
+  @include centeredFlex();
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  outline: 1px solid getColor('main');
+  border-radius: $btn-border-radius;
+  color: getColor('main');
+  transition: background-color $transition-basic;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('bg-btn-blog');
     outline: 2px solid getColor('main');
   }
 }

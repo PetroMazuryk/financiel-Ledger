@@ -1,4 +1,40 @@
 <section class="blog container" id="blog">
+  <div class="blog__thumb">
+    <picture>
+      <source
+        class="lazyload"
+        srcset="
+          ./images/blog/note-desk-680.jpg    1x,
+          ./images/blog/note-desk@2-1360.jpg 2x
+        "
+        media="(min-width: 1360px)"
+        loading="lazy"
+      />
+      <source
+        class="lazyload"
+        srcset="
+          ./images/blog/note-tab-384.jpg   1x,
+          ./images/blog/note-tab@2-768.jpg 2x
+        "
+        media="(min-width:768px)"
+        loading="lazy"
+      />
+      <source
+        srcset="
+          ./images/blog/note-mob-480.jpg   1x,
+          ./images/blog/note-mob@2-960.jpg 2x
+        "
+        media="(max-width:767px)"
+        loading="lazy"
+      />
+      <img
+        set="./images/blog/note-desk-680.jpg"
+        alt="Tablet notepad coffee cup"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+
   <div class="blog__post">
     <div class="swiper">
       <div class="swiper__wrapper">
@@ -16,7 +52,7 @@
             them in an interesting way that someone will actually read feels
             reminiscent of a dentist visit for many of us.
           </p>
-          <button type="button" class="btn btn__blog">Read Our Blog</button>
+          <button type="button" class="btn btn__blog">> Read Our Blog</button>
         </div>
         <!-- 2 -->
         <div class="swiper__slide">
@@ -67,40 +103,5 @@
       </p>
       <a class="blog__close">Close</a>
     </div>
-  </div>
-  <div class="blog__thumb">
-    <picture>
-      <source
-        class="lazyload"
-        srcset="
-          ./images/blog/note-desk-680.jpg    1x,
-          ./images/blog/note-desk@2-1360.jpg 2x
-        "
-        media="(min-width: 1360px)"
-        loading="lazy"
-      />
-      <source
-        class="lazyload"
-        srcset="
-          ./images/blog/note-tab-384.jpg   1x,
-          ./images/blog/note-tab@2-768.jpg 2x
-        "
-        media="(min-width:768px)"
-        loading="lazy"
-      />
-      <source
-        srcset="
-          ./images/blog/note-mob-480.jpg   1x,
-          ./images/blog/note-mob@2-960.jpg 2x
-        "
-        media="(max-width:767px)"
-        loading="lazy"
-      />
-      <img
-        set="./images/blog/note-desk-680.jpg"
-        alt="Tablet notepad coffee cup"
-        loading="lazy"
-      />
-    </picture>
   </div>
 </section>
