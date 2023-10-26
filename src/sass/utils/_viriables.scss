@@ -20,7 +20,9 @@ $colors: (
   'bg-services': #28a745,
   'bg-blog': #0284d0,
   'bg-btn-blog': #5e65ca,
+  'bg-request': #f4f4f4,
   'text': #333333,
+  'placeholder': #808080,
 );
 
 @function getColor($key) {

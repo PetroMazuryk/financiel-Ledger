@@ -1,0 +1,59 @@
+<section class="request container">
+  <div class="request__photo">
+    <picture>
+      <source
+        srcset="
+          ./images/request/man-desk-680.jpg    1x,
+          ./images/request/man-desk@2-1360.jpg 2x
+        "
+        media="(min-width:1360px)"
+      />
+      <source
+        srcset="
+          ./images/request/man-tab-384.jpg   1x,
+          ./images/request/man-tab@2-768.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/request/man-mob-480.jpg   1x,
+          ./images/request/man-mob@2-960.jpg 2x
+        "
+        media="(max-width:767px)"
+        loading="lazy"
+      />
+      <img
+        class="lazyload"
+        src="./images/request/man-desk-680.jpg"
+        alt="busy man in the office  working on a laptop"
+        width="680"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <div class="request__feedback" id="contact">
+    <h3 class="request__title">Request Callback</h3>
+    <form class="request__feedback-form">
+      <div class="request__feedback-group">
+        <label for="name"
+          ><input
+            id="name"
+            class="user-name"
+            type="text"
+            placeholder="Enter your name"
+        /></label>
+      </div>
+      <div class="feedback__form-group">
+        <label for="email"
+          ><input
+            id="email"
+            class="user-email"
+            type="email"
+            placeholder="Enter email*"
+        /></label>
+      </div>
+      <button class="btn btn__request-form" type="submit">Send</button>
+    </form>
+  </div>
+</section>

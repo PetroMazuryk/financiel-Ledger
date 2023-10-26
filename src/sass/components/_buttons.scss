@@ -124,3 +124,28 @@
     outline: 2px solid getColor('main');
   }
 }
+.btn__request-form {
+  margin-top: 53px;
+  background-color: getColor('bg-basic');
+  width: 260px;
+  height: 42px;
+  border: none;
+  border-radius: $btn-border-radius;
+  color: getColor('main');
+  @include centeredFlex();
+  transition: background-color $transition-basic;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('bg-btn-hover');
+    outline: 2px solid getColor('main');
+  }
+
+  @media (min-width: 768px) {
+    width: 324px;
+  }
+
+  @media (min-width: 1360px) {
+    width: 620px;
+  }
+}
