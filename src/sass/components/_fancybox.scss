@@ -1,0 +1,37 @@
+.fancybox__container {
+  --fancybox-bg: rgba(132, 248, 116, 0.5);
+}
+
+.fancybox__container .fancybox__content {
+  box-sizing: content-box;
+  padding: 1rem;
+  background: rgba(209, 128, 23, 0.7);
+  border-radius: 6px;
+  color: #374151;
+  box-shadow: 0 8px 23px rgb(0 0 0 / 50%);
+}
+
+.fancybox__caption {
+  max-width: 80%;
+  font-size: 80px;
+  --fancybox-opacity: 1;
+}
+
+.carousel__button.fancybox__button--close {
+  transition: $transition-basic;
+
+  &:hover {
+    transform: rotate(90deg) scale(1.5);
+    color: red;
+  }
+}
+
+.carousel__button.is-next,
+.carousel__button.is-prev {
+  transition: $transition-basic;
+}
+
+.carousel__button.is-next:hover,
+.carousel__button.is-prev:hover {
+  color: red;
+}

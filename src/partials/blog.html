@@ -2,7 +2,6 @@
   <div class="blog__thumb">
     <picture>
       <source
-        class="lazyload"
         srcset="
           ./images/blog/note-desk-680.jpg    1x,
           ./images/blog/note-desk@2-1360.jpg 2x
@@ -11,7 +10,6 @@
         loading="lazy"
       />
       <source
-        class="lazyload"
         srcset="
           ./images/blog/note-tab-384.jpg   1x,
           ./images/blog/note-tab@2-768.jpg 2x
@@ -28,7 +26,8 @@
         loading="lazy"
       />
       <img
-        set="./images/blog/note-desk-680.jpg"
+        class="lazyload"
+        data-src="./images/blog/note-desk-680.jpg"
         alt="Tablet notepad coffee cup"
         loading="lazy"
       />
