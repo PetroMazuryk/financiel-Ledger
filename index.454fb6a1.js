@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll("img[loading='lazy']"),n=function(){var n=window.innerHeight/5*4,r=!0,t=!1,a=void 0;try{for(var i,l=e[Symbol.iterator]();!(r=(i=l.next()).done);r=!0){var o=i.value;o.getBoundingClientRect().top<n?o.classList.add("appear"):o.classList.remove("appear")}}catch(e){t=!0,a=e}finally{try{r||null==l.return||l.return()}finally{if(t)throw a}}};n(),window.addEventListener("scroll",n)}();
+//# sourceMappingURL=index.454fb6a1.js.map
