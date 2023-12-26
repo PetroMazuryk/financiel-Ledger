@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p,
 h1,
 h2,
@@ -28,6 +32,7 @@ button {
 input {
   border: none;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -48,8 +53,4 @@ body {
   margin: 0;
   color: #2a2a2a;
   background-color: getColor('body');
-}
-
-html {
-  scroll-behavior: smooth;
 }
