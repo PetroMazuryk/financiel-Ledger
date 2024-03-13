@@ -1,7 +1,7 @@
 // const lazyImage = document.querySelectorAll("img[loading='lazy']");
 
 // lazyImage.forEach(images => {
-//   images.addEventListener('load', onImageLoaded);
+//   images.addEventListener('load', onImageLoaded, { once: true });
 // });
 
 // function onImageLoaded(event) {
